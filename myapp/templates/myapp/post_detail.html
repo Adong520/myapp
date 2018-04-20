@@ -1,0 +1,14 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+
+    <h4>{{post.title}}</h4>
+    <b> {{post.author}} </b>
+    <p>{{post.creation_date}}</p>
+    <p>{{post.published_date}}</p>
+    <p>{{post.content}}</p>
+
+{% endblock %}
+

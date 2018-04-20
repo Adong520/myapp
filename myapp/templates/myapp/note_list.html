@@ -1,0 +1,8 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+    {% for note in notes %}
+       <b> {{note.content}} </b>
+    {% endfor %}
+
+{% endblock %}

@@ -5,15 +5,16 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="{% static 'css/myapp.css' %}">
         <link rel="stylesheet" href="http://codepen.io/edbond88/pen/CcgvA.css" media="screen" type="text/css" />
 
     </head>
     <body>
         <div class='page-header'>
             {% if user.is_authenticated %}
-                < a href="/" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a -->
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             {% endif %}
+
 
             <h3><a href="/">Blog</a></h3>
         </div>
